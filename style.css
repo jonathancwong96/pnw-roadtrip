@@ -4,6 +4,10 @@ body {
     margin: 0px;
 }
 
+div {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -32,26 +36,39 @@ ul {
     background: #1F2937;
     padding: 80px 20px;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+
 }
 .summary-title {
     color: white;
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 900;
 }
 .summary-text {
     color: white;
-    font-size: 18px;
+    font-size: 26px;
+}
+.summary-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
 }
 
 div {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Shadows Into Light', serif;
 }
 
-img {
-    width: 300px;
+.summary-right img {
+    width: 500px;
     height: auto;
+}
+
+.cards img {
+    width: 150px;
+    height: auto;
+    border: 2px solid;
+    border-radius:50%;
 }
 a {
     color: white;
@@ -78,4 +95,70 @@ a:visited {
     color: white;
     font-size: 14px;
 
+}
+
+.points-of-interests{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 20px;
+}
+
+.cards {
+    flex-shrink: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards-text {
+    color: grey;
+    font-size: 16px;
+}
+
+.plan {
+    background: #E5E7EB;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-text {
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+    font-family: 'Shadows Into Light', serif;
+}
+
+.poi-cards-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 20px;
+}
+
+.food-cards-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.food-cards {
+    flex-shrink: 0;
+    gap: 0px;
+}
+.food-cards img {
+    width: 200px;
 }
